@@ -7,7 +7,7 @@
 
 package org.usfirst.frc.team9135.robot;
 
-import edu.wpi.first.wpilibj.TimedRobot;
+import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
@@ -23,7 +23,7 @@ import org.usfirst.frc.team9135.robot.subsystems.ExampleSubsystem;
  * creating this project, you must also update the build.properties file in the
  * project.
  */
-public class Robot extends TimedRobot {
+public class Robot extends IterativeRobot {
 
 	public static final ExampleSubsystem kExampleSubsystem
 			= new ExampleSubsystem();
