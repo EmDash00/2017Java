@@ -83,7 +83,7 @@ public class Lidars extends Subsystem
 		public static final int INCHES = 1;
 		public static final int METERS = 2;
 
-		public static int[] DISTANCE_UNIT_ARRAY = {CENTIMETERS, INCHES, METERS};
+		public static final int[] DISTANCE_UNIT_ARRAY = {CENTIMETERS, INCHES, METERS};
 
 		public static final byte VALUE_TO_OPEN_LIDAR_CHANNEL_6_RIGHT_LIDAR = (byte)0b01000000;
 		public static final byte VALUE_TO_OPEN_LIDAR_CHANNEL_7_LEFT_LIDAR = (byte)0b10000000;

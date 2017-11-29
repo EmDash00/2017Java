@@ -9,7 +9,7 @@ import edu.wpi.first.wpilibj.*;
 /**
  *
  */
-public class AimBotWithUltrasonicSenors extends Command 
+public class AimBotWithUltrasonicSensors extends Command 
 {
 	double leftUltrasonicSensorValue = 0.0;
 	double rightUltrasonicSensorValue = 0.0;
@@ -22,7 +22,7 @@ public class AimBotWithUltrasonicSenors extends Command
 	static double MAX_TIME_FOR_EXECUTING_DRIVE_TRAIN_PID = .5;
 	
 
-    public AimBotWithUltrasonicSenors(Boolean sonarGood) {
+    public AimBotWithUltrasonicSensors(Boolean sonarGood) {
     	// Use Requires() here to declare subsystem dependencies
     	Requires(CommandBase.ultrasonicSensor.get());
     	Requires(CommandBase.driveTrain.get());
@@ -31,7 +31,7 @@ public class AimBotWithUltrasonicSenors extends Command
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     }
-
+a
     // Called just before this Command runs the first time
     protected void initialize() {
     	leftUltrasonicSensorValue = CommandBase.ultrasonicSensor.GetGearUltrasonicSensorValueInches();

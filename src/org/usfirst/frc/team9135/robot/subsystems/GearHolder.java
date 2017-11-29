@@ -38,10 +38,10 @@ public class GearHolder extends Subsystem
 		public static final int UPPER_LIMIT_SWITCH_PORT = 1;
 		public static final int LOWER_LIMIT_SWITCH_PORT = 0;
 
-		public static  double SERVO_OUT_POSITION = 0.0;
+		public static final double SERVO_OUT_POSITION = 0.0;
 		//  150 for Competition Bot
 		//  180 for Practice Bot
-		public static  double SERVO_IN_POSITION = 150.0;
+		public static final double SERVO_IN_POSITION = 150.0;
 
 		public boolean gearUsedNotDefaultly = false;
 		

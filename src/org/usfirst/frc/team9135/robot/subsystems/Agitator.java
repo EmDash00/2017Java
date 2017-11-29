@@ -27,7 +27,7 @@ public class Agitator extends Subsystem
 		agitatorMotorPart2.setInverted(RobotMap.CB_AGITATOR_2_INVERTED);
 	}
 
-	void DriveAgitator(double agitator1MotorPower, double agitator2MotorPower) {
+	public void DriveAgitator(double agitator1MotorPower, double agitator2MotorPower) {
 		agitatorMotor.set(agitator1MotorPower);
 		agitatorMotorPart2.set(agitator2MotorPower);
 	}
