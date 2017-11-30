@@ -116,7 +116,7 @@ public class OI {
 			return deadbandJoystickValue;
 		}
 
-		boolean GetButtonPressed(int joystickNumber, int joystickButtonNumber) {
+		public boolean GetButtonPressed(int joystickNumber, int joystickButtonNumber) {
 			return joystickButton[joystickNumber][joystickButtonNumber].get();
 		}
 
@@ -139,7 +139,7 @@ public class OI {
 			return joystick[joystickNumber].getPOV(POV_NUMBER);
 		}
 
-		boolean POVDirectionPressed(int joystickNumber, int povDirection) {
+		public boolean POVDirectionPressed(int joystickNumber, int povDirection) {
 			povValue = this.GetAngleOfPOV(joystickNumber);
 
 			switch(povDirection) {
@@ -222,7 +222,7 @@ public class OI {
 			//joystickButton[LEFT_DRIVE_JOYSTICK][9].ToggleWhenPressed(new GearUpAndDown());
 		}
 
-		boolean GetAction(int JoyException, int ButtonException)
+		public boolean GetAction(int JoyException, int ButtonException)
 		{
 			for(int i = 0; i < NUM_OF_JOYSTICKS; i++)
 			{
