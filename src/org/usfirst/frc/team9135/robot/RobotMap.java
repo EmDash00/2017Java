@@ -101,7 +101,7 @@ public class RobotMap
 		None
 	}; */
 
-	enum ShooterPIDSelection {
+	public enum ShooterPIDSelection {
 		PID_CompetitionBot,
 		PID_Ramp_Up,
 		Voltage

@@ -1,6 +1,7 @@
 package org.usfirst.frc.team9135.robot.subsystems;
 
 import org.usfirst.frc.team9135.robot.RobotMap;
+import org.usfirst.frc.team9135.robot.commands.ReadLiftHangEncoderValue;
 
 import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -37,7 +38,7 @@ public class LiftHang extends Subsystem {
 	public void initDefaultCommand() {
 		// Set the default command for a subsystem here.
 		// SetDefaultCommand(new MySpecialCommand());
-		SetDefaultCommand(new ReadLiftHangEncoderValue());
+		setDefaultCommand(new ReadLiftHangEncoderValue());
 	}
 
 	public void InitializeLiftHang(boolean competitionBot) {

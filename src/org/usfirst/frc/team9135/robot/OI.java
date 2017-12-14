@@ -120,7 +120,7 @@ public class OI {
 			return joystickButton[joystickNumber][joystickButtonNumber].get();
 		}
 
-		double GetThrottleValue(int joystickNumber) {
+		public double GetThrottleValue(int joystickNumber) {
 			return (-1 * joystick[joystickNumber].getThrottle());
 		}
 

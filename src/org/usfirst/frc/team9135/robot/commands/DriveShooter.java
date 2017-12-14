@@ -47,7 +47,7 @@ public class DriveShooter extends Command {
 	private boolean initializedCloseShotPIDSlot = false;
 	private boolean initializedFarShotPIDSlot = false;
 
-    public DriveShooter() {
+    public DriveShooter(ShooterPIDSelection shooterMode) {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     	requires(CommandBase.shooter);
@@ -69,7 +69,7 @@ public class DriveShooter extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	closeShotMode = CommandBase.shooter.GetSwitchBetweenFarAndCloseShotShooterRPM();
+    	closeShotMode = CommandBase.shooter.getSwitchBetweenFarAndCloseShotShooterRPM();
 
     	if (closeShotMode) {
     		if (initializedCloseShotPIDSlot == false) {
